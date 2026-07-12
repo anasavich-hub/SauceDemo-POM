@@ -9,6 +9,7 @@ public class LoginPage {
     public By passwordPolje = By.id("password");
     public By loginDugme    = By.id("login-button");
     public By errorPoruka   = By.xpath("//h3[@data-test='error']");
+    public By example = By.id("example");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
