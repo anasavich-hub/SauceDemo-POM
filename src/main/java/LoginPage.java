@@ -11,6 +11,7 @@ public class LoginPage {
     public By errorPoruka   = By.xpath("//h3[@data-test='error']");
     public By primer = By.id("primer");
 
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
