@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class SauceLabsTest extends BaseTest {
@@ -51,6 +53,6 @@ public class SauceLabsTest extends BaseTest {
                 "Error poruka treba da bude vidljiva",
                 loginPage.errorPorukaJeVidljiva()
         );
-        System.out.println("PASS - Error: " + loginPage.getErrorTekst());
+        System.out.println(" Poruka glasi: " + loginPage.getErrorTekst());
     }
 }

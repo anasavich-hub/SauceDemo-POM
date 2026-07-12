@@ -9,6 +9,7 @@ public class CartPage {
     public By mojaKupovina  = By.id("title");
     public By poljeProizvoda   = By.id("cart_item");
     public By nazivProizvoda   = By.id("inventory_item_name");
+    public By checkoutDugme = By.id("checkout");
 
 
     public CartPage(WebDriver driver) {
@@ -29,6 +30,10 @@ public class CartPage {
 
     public String getNazivProizvoda() {
         return driver.findElement(nazivProizvoda).getText();
+    }
+
+    public void klikniNaCheckout() {
+        driver.findElement(checkoutDugme).click();
     }
 
 
